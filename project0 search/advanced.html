@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Link to css stylesheet -->
+        <link href=styles.css rel="stylesheet" type="text/css">
+        <title>Advanced Search</title>
+    </head>
+    <body>
+        <div class="topright">
+            <a href="index.html">Google Search</a>
+            <a href="image.html">Image Search</a>
+        </div>
+
+        <h3>Advanced Search</h5>
+        <br>
+        <section class="multiple">
+            <h4>Find pages with ...</h4>
+            <br>
+            <form action="https://google.com/search" autocomplete="off">
+                <table>
+                    <tr>
+                        <td>all these words:</td>
+                        <td><input type="text" name="as_q" class="inputboxv2"></td>
+                    </tr>
+                    <tr>
+                        <td>this exact word or phrase:</td>
+                        <td><input type="text" name="as_epq" class="inputboxv2"></td>
+                    </tr>
+                    <tr>
+                        <td>any of these words:</td>
+                        <td><input type="text" name="as_oq" class="inputboxv2"></td>
+                    </tr>
+                    <tr>
+                        <td>none of these words:</td>
+                        <td><input type="text" name="as_eq" class="inputboxv2"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Advanced Search" class="submitv2"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </body>
+</html>
