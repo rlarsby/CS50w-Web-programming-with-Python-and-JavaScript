@@ -7,5 +7,4 @@ All of the code I've written participating in the course "CS50w Web programming 
 - [ ] Project 2
 - [ ] Project 3
 - [ ] Project 4
-- [ ] Project 5
 - [ ] Final project
