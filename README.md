@@ -3,7 +3,7 @@ All of the code I've written participating in the course "CS50w Web programming 
 <br>
 ## Syllabuss Progress ##
 - [x] Project 0: HTML, CSS
-- [ ] Project 1: Django
+- [x] Project 1: Django
 - [ ] Project 2
 - [ ] Project 3
 - [ ] Project 4
