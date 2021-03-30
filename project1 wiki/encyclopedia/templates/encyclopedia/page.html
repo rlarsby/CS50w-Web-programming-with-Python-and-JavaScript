@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ name|safe }}
+{% endblock %}
+ 
+{% block body %}
+
+    {% if name|upper in entries|upper %}
+        {{ content|safe }}
+
+        <br><a href="{{ name }}/edit">Edit Page</a>
+
+    {% else %}
+        <h3>Wiki page not found</h3>
+    {% endif %}
+
+{% endblock %}

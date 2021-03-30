@@ -1,0 +1,22 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    New Page
+{% endblock %}
+ 
+{% block body %}
+    <h1>New Wiki Entry</h1>
+    <form action="{% url 'new' %}" method="post">
+        {% csrf_token %}
+        {{ NewPage }}
+        <input style="width: 500px;" type="text" name="title" placeholder="Title" autocomplete="off">
+        <br>
+        <textarea style="height: 400px;" type="text" name="text" placeholder="Write text here" autocomplete="off"></textarea>
+        <br>
+        <input type="submit" value="Save Page">
+    </form>
+    <br>
+    {% if error == True %}
+        <h5 style="color: red;">Title is already taken</h5>
+    {% endif %}
+{% endblock %}
